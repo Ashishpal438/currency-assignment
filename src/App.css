@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+    width: 40%;
+    margin: auto;
+    border: 1px solid rgba(170, 170, 170, 0.616);
+    border-radius: 10px;
+    min-height: 100vh;
+    position: relative;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .header {
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.616);
+    font-size: 70px;
+    font-weight: bold;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .footer {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 40%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    padding: 15px;
   }
-}
+  
+  .searchbar-container {
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: auto;
+    display: grid;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .searchbar-container input {
+    font-size: 14px;
+    padding: 15px 30px;
+    border: 1px solid rgba(170, 170, 170, 0.616);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    outline: none;
+  }
+  
+  .searchbar-container span {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .cell {
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid rgba(170, 170, 170, 0.616);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+  }
+  
+  .cell-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(44, 40, 40);
+  }
+  
+  .cell img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .cell .price {
+    font-size: 16px;
+    color: rgb(44, 40, 40);
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .container {
+      width: 100%;
+    }
+    .searchbar-container {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .cell {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .footer{
+        width: 100%;
+    }
+  }
+  
+
+
